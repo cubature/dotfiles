@@ -23,9 +23,15 @@
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
+
+    # user settings
+    # Disable default keymap 's' and 'q'
     windows_leader = ''
     windows_smartclose = ''
+    # Project management settings
     project_rooter_outermost = false
+    # Set filetree default display position
+    filetree_direction = "left"
 
 # Enable autocomplete layer
 [[layers]]
@@ -46,4 +52,7 @@ default_height = 30
 
 [[layers]]
   name = "format"
+
+[[layers]]
+  name = "git"
 
