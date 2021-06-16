@@ -30,8 +30,9 @@
     windows_smartclose = ''
     # Project management settings
     project_rooter_outermost = false
-    # Set filetree default display position
+    # Filetree
     filetree_direction = "left"
+    enable_vimfiler_gitstatus = true
 
 # Enable autocomplete layer
 [[layers]]
