@@ -31,8 +31,8 @@
     # Project management settings
     project_rooter_outermost = false
     # Filetree
-    filetree_direction = "left"
-    enable_vimfiler_gitstatus = true
+    # filetree_direction = "left" # this make some mic mac with tag list
+    # enable_vimfiler_gitstatus = true # this make vim too slow
 
 # Enable autocomplete layer
 [[layers]]
