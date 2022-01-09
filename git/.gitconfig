@@ -1,15 +1,31 @@
 [alias]
-  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset | %C(bold)%an' --abbrev-commit --date=relative
-  st = status
-  cm = commit -m
   a = add
+  aa = add .
   b = branch
-  r = restore
-  rs = restore --staged
+  ba = branch -a
+  c = commit
+  # ca = commit -a
+  # cc = commit -a -m
+  cl = clone
+  cm = commit -m
+  co = checkout
+  # cp = cherry-pick
   d = diff
   ds = diff --staged
-  
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset | %C(bold)%an' --abbrev-commit --date=relative
+  l1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  l2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  nb = checkout -b
+  # pl = pull
+  # ps = push origin master
+  r = restore
+  # r = reset
+  rs = restore --staged
+  st = status
+# [url "git@domain.name:"]
+# 	insteadOf = https://domain.name
 [core]
   whitespace = cr-at-eol
-  autocrlf = input
-
+	autocrlf = input
+[gui]
+	encoding = utf-8
