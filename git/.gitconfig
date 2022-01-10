@@ -24,8 +24,8 @@
   st = status
 # [url "git@domain.name:"]
 # 	insteadOf = https://domain.name
-[core]
-  whitespace = cr-at-eol
-	autocrlf = input
-[gui]
-	encoding = utf-8
+# [core]
+#   whitespace = cr-at-eol
+# 	autocrlf = input
+# [gui]
+# 	encoding = utf-8
