@@ -43,7 +43,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      ;; git
      helm
-     ;; lsp
+     lsp
      ;; markdown
      multiple-cursors
      ;; org
@@ -54,7 +54,10 @@ This function should only modify configuration layer settings."
      ;; syntax-checking
      ;; version-control
      treemacs
+     ;; user costom settings
      chinese
+     (go :variables go-backend 'lsp)
+     dap
     )
 
 
@@ -560,6 +563,9 @@ before packages are loaded."
   (pyim-default-scheme 'wubi)
   (pyim-wbdict-v86-enable)
   (global-set-key (kbd "C-SPC") 'toggle-input-method)
+
+  ;; disable background color
+  (set-face-background 'default "unspecified-bg")
 )
 
 
