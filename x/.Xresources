@@ -1,41 +1,41 @@
 !! Colorscheme
 URxvt.depth: 32 ! 24 for disable transparency
 ! special
-URxvt.foreground:   #a6a28c
-URxvt.background:   [70]#20201d
-URxvt.cursorColor:  #a6a28c
+URxvt.foreground:   #a2a2a2
+URxvt.background:   [70]#282828
+URxvt.cursorColor:  #a2a2a2
 
 ! black
-URxvt.color0:       #20201d
-URxvt.color8:       #7d7a68
+URxvt.color0:       #555555
+URxvt.color8:       #888888
 
 ! red
-URxvt.color1:       #d73737
-URxvt.color9:       #d73737
+URxvt.color1:       #9c3528
+URxvt.color9:       #d64937
 
 ! green
-URxvt.color2:       #60ac39
-URxvt.color10:      #60ac39
+URxvt.color2:       #61bc3b
+URxvt.color10:      #86df5d
 
 ! yellow
-URxvt.color3:       #cfb017
-URxvt.color11:      #cfb017
+URxvt.color3:       #f3b43a
+URxvt.color11:      #fdd75a
 
 ! blue
-URxvt.color4:       #6684e1
-URxvt.color12:      #6684e1
+URxvt.color4:       #0d68a8
+URxvt.color12:      #0f75bd
 
 ! magenta
-URxvt.color5:       #b854d4
-URxvt.color13:      #b854d4
+URxvt.color5:       #744560
+URxvt.color13:      #9e5e83
 
 ! cyan
-URxvt.color6:       #1fad83
-URxvt.color14:      #1fad83
+URxvt.color6:       #288e9c
+URxvt.color14:      #37c3d6
 
 ! white
-URxvt.color7:       #a6a28c
-URxvt.color15:      #fefbec
+URxvt.color7:       #a2a2a2
+URxvt.color15:      #f9f9f9
 
 !! URxvt Appearance
 URxvt.font: xft:Noto Sans CJK SC:style=Regular:size=10
