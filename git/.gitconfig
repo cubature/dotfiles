@@ -22,6 +22,8 @@
   # r = reset
   rs = restore --staged
   st = status
+[pull]
+	rebase = false
 # [url "git@domain.name:"]
 # 	insteadOf = https://domain.name
 # [core]
