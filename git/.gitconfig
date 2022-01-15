@@ -23,7 +23,7 @@
   rs = restore --staged
   st = status
 [pull]
-	rebase = false
+  rebase = false
 # [url "git@domain.name:"]
 #   insteadOf = https://domain.name
 [core]
