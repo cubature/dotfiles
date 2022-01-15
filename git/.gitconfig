@@ -25,11 +25,10 @@
 [pull]
 	rebase = false
 # [url "git@domain.name:"]
-# 	insteadOf = https://domain.name
-# [core]
-#   whitespace = cr-at-eol
-# 	autocrlf = input
-# [gui]
-# 	encoding = utf-8
+#   insteadOf = https://domain.name
 [core]
-	editor = vi
+  editor = vi
+#   whitespace = cr-at-eol
+#   autocrlf = input
+# [gui]
+#   encoding = utf-8
