@@ -31,3 +31,5 @@
 # 	autocrlf = input
 # [gui]
 # 	encoding = utf-8
+[core]
+	editor = vi
