@@ -18,6 +18,10 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
+# layout customization
+default_border pixel 5
+default_floating_border pixel 5
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -34,10 +38,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 ## use fcitx5 as the input mode
-exec --no-startup-id fcitx5
+# exec --no-startup-id fcitx5
 
 # Terminal transparency
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

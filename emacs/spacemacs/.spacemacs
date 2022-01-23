@@ -565,7 +565,10 @@ before packages are loaded."
   (global-set-key (kbd "C-SPC") 'toggle-input-method)
 
   ;; disable background color
-  (set-face-background 'default "unspecified-bg")
+  ;; (set-face-background 'default "unspecified-bg")
+
+  ;; golang settings
+  (setq go-tab-width 4)
 )
 
 
