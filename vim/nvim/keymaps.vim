@@ -2,7 +2,7 @@
 let mapleader=" "
 
 " buffer
-nnoremap <leader>bb :ls<cr>
+nnoremap <leader>bb :ls<cr>:b
 
 nnoremap <leader>bp :bp<cr>
 nnoremap <leader>bn :bn<cr>
@@ -16,7 +16,7 @@ nnoremap <leader>fs :w<cr>
 " tab
 nnoremap <leader>tt :tabs<cr>
 
-nnoremap <leader>te :tabe<cr>
+nnoremap <leader>tN :tabe<cr>
 
 nnoremap <leader>t1 :tabr<cr>
 nnoremap <leader>tp :tabp<cr>
@@ -35,12 +35,18 @@ nnoremap <leader>wk <c-w>k
 nnoremap <leader>wh <c-w>h
 nnoremap <leader>wl <c-w>l
 
+nnoremap <leader>wJ <c-w>J
+nnoremap <leader>wK <c-w>K
+nnoremap <leader>wH <c-w>H
+nnoremap <leader>wL <c-w>L
+
 nnoremap <c-h> <c-w><
 nnoremap <c-l> <c-w>>
 nnoremap <c-k> <c-w>+
 nnoremap <c-j> <c-w>-
 
 nnoremap <leader>wd <c-w>c
+nnoremap <leader>wD <c-w>o
 
 " quit
 nnoremap <leader>qq :q<cr>
