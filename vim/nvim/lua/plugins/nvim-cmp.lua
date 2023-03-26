@@ -1,11 +1,11 @@
 local M = {}
 
 function M.config()
-  local lspking = require("lspkind")
+  local lspkind = require("lspkind")
   local cmp = require("cmp")
 
   cmp.setup {
-    -- 指定 snippet 引擎
+    -- specify snippet engine
     snippet = {
       expand = function(args)
         -- For `vsnip` users.
@@ -34,10 +34,32 @@ function M.config()
       -- { name = 'snippy' },
     }, { { name = 'buffer' },
          { name = 'path' }
-      }),
+    }),
 
     -- 快捷键
-    mapping = require'keybindings'.cmp(cmp),
+    mapping = {
+      -- 上一个
+      ['<c-p>'] = cmp.mapping.select_prev_item(),
+      -- 下一个
+      ['<c-n>'] = cmp.mapping.select_next_item(),
+      -- 出现补全
+      ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+      -- 取消
+      ['<A-,>'] = cmp.mapping({
+        i = cmp.mapping.abort(),
+        c = cmp.mapping.close(),
+      }),
+      -- 确认
+      -- Accept currently selected item. If none selected, `select` first item.
+      -- Set `select` to `false` to only confirm explicitly selected items.
+      ['<tab>'] = cmp.mapping.confirm({
+        select = true ,
+        behavior = cmp.ConfirmBehavior.Replace
+      }),
+      -- ['<c-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
+      ['<c-u>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+      ['<c-d>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+    },
     -- 使用lspkind-nvim显示类型图标
     formatting = {
       format = lspkind.cmp_format({
@@ -64,8 +86,8 @@ function M.config()
     sources = cmp.config.sources({
       { name = 'path' }
     }, {
-        { name = 'cmdline' }
-      })
+      { name = 'cmdline' }
+    })
   })
 end
 

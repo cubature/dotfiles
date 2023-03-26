@@ -1,6 +1,3 @@
-" leader key
-let mapleader=" "
-
 " buffer
 nnoremap <leader>bb :ls<cr>:b
 
@@ -49,5 +46,5 @@ nnoremap <leader>wd <c-w>c
 nnoremap <leader>wD <c-w>o
 
 " quit
-nnoremap <leader>qq :q<cr>
+nnoremap <leader>qq :confirm qa<cr>
 

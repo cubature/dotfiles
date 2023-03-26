@@ -13,3 +13,6 @@ set autoindent
 set nowrap
 " no backup file
 set nobackup
+" leader key
+let mapleader=" "
+let maplocalleader=" "

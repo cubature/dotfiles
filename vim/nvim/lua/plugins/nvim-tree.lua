@@ -5,8 +5,6 @@ function M.config()
   vim.g.loaded_netrw = 1
   vim.g.loaded_netrwPlugin = 1
 
-  --vim.opt.termguicolors = true
-
   require("nvim-tree").setup({
     view = {
       mappings = {
@@ -17,8 +15,8 @@ function M.config()
     },
   })
 
-  vim.api.nvim_set_keymap("n", "<leader>ft", ":NvimTreeToggle<cr>", { noremap = true, silent = true })
-  vim.api.nvim_set_keymap("n", "<leader>fT", ":NvimTreeFindFileToggle<cr>", { noremap = true, silent = true })
+  vim.keymap.set("n", "<leader>ft", ":NvimTreeToggle<cr>", { desc = "open file tree" } )
+  vim.keymap.set("n", "<leader>fT", ":NvimTreeFindFileToggle<cr>", { desc = "locate current file in file tree" } )
 end
 
 return M
