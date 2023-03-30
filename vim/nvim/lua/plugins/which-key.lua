@@ -22,7 +22,7 @@ function M.config()
         s = { "save" },
       },
       t = {
-        name = "tab",
+        name = "terminal & tab",
         t = { "tab list" },
         N = { "new tab" },
         ["1"] = { "the first tab" },

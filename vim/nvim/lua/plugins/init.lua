@@ -109,12 +109,6 @@ return (function()
       config = require("plugins/nvim-treesitter").config,
     },
 
-    -- terminal
-    {
-      'akinsho/toggleterm.nvim',
-      config = require("plugins/toggleterm").config,
-    },
-
     -- theme
     {
       "folke/tokyonight.nvim",
@@ -123,5 +117,10 @@ return (function()
   })
 
   vim.keymap.set("n", "<leader>PP", ":Lazy profile<cr>")
+
+  -- nvim specific keymaps
+  -- terminal
+  vim.keymap.set("n", "<leader>tt", ":terminal<cr>")
+  vim.keymap.set("t", "<esc>", "<c-\\><c-n>")
 end)()
 

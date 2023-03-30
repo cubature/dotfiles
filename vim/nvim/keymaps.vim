@@ -11,7 +11,7 @@ nnoremap <leader>bD :bd!<cr>
 nnoremap <leader>fs :w<cr>
 
 " tab
-nnoremap <leader>tt :tabs<cr>
+nnoremap <leader>tL :tabs<cr>
 
 nnoremap <leader>tN :tabe<cr>
 
