@@ -74,6 +74,10 @@ return (function()
       "mfussenegger/nvim-dap",
       config = require("plugins/nvim-dap").config,
     },
+    {
+      "leoluz/nvim-dap-go",
+      config = require("plugins/nvim-dap-go").config,
+    },
 
     -- linter
     -- formatter

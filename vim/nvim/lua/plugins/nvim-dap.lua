@@ -44,7 +44,7 @@ function M.config()
     },
   }
 
-  vim.keymap.set("n", "<leader>dw", dap.repl.open, { desc = "debug console" })
+  vim.keymap.set("n", "<leader>dc", dap.repl.toggle, { desc = "debug console" })
   vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "toggle breakpoint" })
   vim.keymap.set("n", "<leader>dr", dap.continue, { desc = "resume" })
   vim.keymap.set("n", "<leader>dn", dap.step_over, { desc = "step over" })
